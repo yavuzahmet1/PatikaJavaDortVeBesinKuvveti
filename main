@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Lütfen sayi giriniz\t: ");
+        int girilenSayi = scanner.nextInt();
+
+        for (int x = 1; x < girilenSayi; x *= 4) {
+            //System.out.println("For Döngüsü ile, Girilen sayiya kadar 4'ün kuvvetleri\t: ");
+            System.out.print(x + ",");
+        }
+        System.out.println();
+        System.out.println("*****************");
+        for (int y = 1; y < girilenSayi; y *= 5) {
+            System.out.print(y + ",");
+        }
+    }
+}
